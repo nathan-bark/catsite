@@ -6,10 +6,6 @@ let breedsArray = [];
 let characteristicsArray = [];
 let checkedResults = [];
 const addResult = document.querySelector(".results");
-const breedTitle = document.querySelector(".breed-title");
-const breedDes = document.querySelector(".description");
-const breedTemps = document.querySelector(".temps");
-const breedPic = document.querySelector(".breed-pic");
 
 const getBreeds = async () => {
   const fetchUrl = baseUrl + apiKey;
@@ -20,10 +16,6 @@ const getBreeds = async () => {
   checkedResults = [];
   checkedChar.forEach((char) => characteristicsArray.push(char.value)); //pushes ticked characteristics to array
   console.log(characteristicsArray);
-  breedTitle.innerText = ``;
-  breedDes.innerText = ``;
-  breedTemps.innerText = ``;
-  breedPic.src = "";
 
   try {
     const response = await fetch(fetchUrl); //gets database
@@ -45,19 +37,53 @@ const getBreeds = async () => {
         }
       }
       console.log(checkedResults);
-
-      if (checkedResults.length > 0) {
-        breedTitle.innerText = `${checkedResults[0].name}`;
-        breedDes.innerText = `${checkedResults[0].description}`;
-        breedTemps.innerText = `${checkedResults[0].temperament}`;
-        breedPic.src = checkedResults[0].image.url;
-      }
     }
   } catch (error) {
     alert(error);
   }
+
+  while (addResult.firstChild) {
+    addResult.removeChild(addResult.firstChild);
+  }
+
+  if (checkedResults.length > 0) {
+    displayResults();
+  } else {
+    const errorMessage = document.createElement('h4');
+    errorMessage.innerText ='Sorry! There are no cats with that combination. Please try again!';
+    addResult.appendChild(errorMessage);
+
+    const errorImage = document.createElement('img');
+    errorImage.src = 'https://static5.tgstat.ru/channels/_0/c0/c05c08dd5b20108f2990b095f1fbe328.jpg';
+    addResult.appendChild(errorImage);
+  }
 };
 
-const displayResults = async () => {};
+const displayResults = () => {
+  const resultsIntro = document.createElement('h3');
+  resultsIntro.innerText = `We found ${checkedResults.length} cat(s) for you!`;
+  addResult.appendChild(resultsIntro);
+
+  checkedResults.forEach((cat) => {
+    const div = document.createElement("div");
+    addResult.appendChild(div);
+
+    const h4 = document.createElement("h4");
+    h4.innerText = `${cat.name}`;
+    div.appendChild(h4);
+
+    const description = document.createElement("p");
+    description.innerText = `${cat.description}`;
+    div.appendChild(description);
+
+    const temperament = document.createElement("p");
+    temperament.innerText = `${cat.temperament}`;
+    div.appendChild(temperament);
+
+    const image = document.createElement("img");
+    image.src = cat.image.url;
+    div.appendChild(image);
+  });
+};
 
 button.addEventListener("click", getBreeds);
