@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    background-color: #FFC4C4;
+    background-image: url('pics/output-onlinepngtools.png');
+    background-position: center;
+    background-size: contain;
+}
+
+/* header */
+
+header {
+    border-bottom: 1px solid #FFF5E4;
+    background-color: #FFF5E4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+li {
+
+    font-size: 20px;
+    color: #EE6983;
+}
+
+a {
+    text-decoration: none;
+    color: #850E35;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+/* headings */
+
+h1 {
+    text-align: center;
+    color: #850E35;
+    background-color: #FFF5E4;
+    padding: 1rem;
+    margin-top: 5rem;
+}
+
+/* buttons */
+
+.get-cat-btn {
+    background-color: #850E35;
+    color: #FFF5E4;
+    outline: none;
+    border: 2px solid #FFF5E4;
+    padding: 10px;
+    border-radius: 13%;
+    width: 25%;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+
+/* image */
+
+.main-pic {
+    align-self: center;
+    width: 70%;
+    border-radius: 25%;
+    border: 2px solid #FFF5E4;
+}
