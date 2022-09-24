@@ -36,6 +36,7 @@ a {
 .container{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 /* headings */
 
@@ -45,6 +46,10 @@ h1 {
     background-color: #FFF5E4;
     padding: 1rem;
     margin-top: 5rem;
+    font-size: 1.3rem;
+    line-height: 130%;
+    letter-spacing: 1.5px;
+    width: 100%;
 }
 
 /* buttons */
@@ -55,17 +60,87 @@ h1 {
     outline: none;
     border: 2px solid #FFF5E4;
     padding: 10px;
-    border-radius: 13%;
+    border-radius: 20px;
     width: 25%;
     align-self: center;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
 }
 
 /* image */
 
 .main-pic {
     align-self: center;
-    width: 70%;
-    border-radius: 25%;
+    max-width: 70vw;
+    border-radius: 20px;
     border: 2px solid #FFF5E4;
+    max-height: 55vh;
+}
+
+
+
+/* Info Page */
+
+.breed-list {
+    background-color: #FFF5E4;
+    color: #EE6983;
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid #EE6983;
+    width: 50%;
+}
+
+.breed-title {
+    text-decoration: underline;
+}
+
+.temperament {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.description-text {
+    text-align: center;
+    background-color: #FFF5E4;
+    color: #850E35;
+    margin: 20px 0px;
+    padding: 4px;
+    width: 100%;
+    
+}
+
+.description {
+    line-height: 22px;
+    padding: 0 5%;
+}
+
+.wiki {
+    color: #EE6983;
+}
+
+.cat-img {
+    max-width: 70%;
+    max-height: 60vh;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+/* responsive */
+
+@media only screen and (min-width: 600px) {
+    li {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    .get-cat-btn {
+        font-size: 1.3rem;
+    }
+
+    .breed-list {
+        width: 25%;
+    }
+
 }

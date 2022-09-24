@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cat Generator</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
@@ -18,28 +19,32 @@
     </header>
 
     <main>
-      <h1>Get Information about Different Breeds of Cat</h1>
+      <div class="container">
+        <h1>Get Information about Different Breeds of Cat</h1>
 
-      <select
-        onchange="showInfo(value)"
-        name="breeds"
-        id="breeds"
-        class="breed-list"
-      ></select>
+        <select
+          onchange="showInfo(value)"
+          name="breeds"
+          id="breeds"
+          class="breed-list"
+        ></select>
 
-      <!-- name of breed -->
-      <h2 class="breed-title"></h2>
+        <div class="description-text">
+          <!-- name of breed -->
+          <h2 class="breed-title"></h2>
 
-      <!-- temperament -->
-      <p class="temperament"></p>
+          <!-- temperament -->
+          <p class="temperament"></p>
 
-      <!-- description -->
-      <p class="description"></p>
-      <!--link to wikipage -->
-      <a href="" class="wiki" target="_blank">More info</a>
+          <!-- description -->
+          <p class="description"></p>
+          <!--link to wikipage -->
+          <a href="" class="wiki" target="_blank">More info</a>
+        </div>
 
-      <!-- image -->
-      <img src="" alt="" class="cat-img" />
+        <!-- image -->
+        <img src="" alt="" class="cat-img" />
+      </div>
     </main>
     <script src="info-scripts.js"></script>
   </body>
