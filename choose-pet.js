@@ -80,9 +80,14 @@ const displayResults = () => {
     temperament.innerText = `${cat.temperament}`;
     div.appendChild(temperament);
 
-    const image = document.createElement("img");
+    if (cat?.image?.url){
+      const image = document.createElement("img");
     image.src = cat.image.url;
     div.appendChild(image);
+    } else {
+      const imageLink = ''
+    }
+    
   });
 };
 

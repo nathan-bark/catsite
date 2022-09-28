@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cat Generator</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
@@ -18,231 +19,220 @@
     </header>
     <main>
       <h1>Choose the best breed of cat for you!</h1>
-
-      <form action="">
-        <h2>Characteristics</h2>
-        <h3>Choose the most important characteristics for your cat. 1 or 2 is recommended. Using 3 or more will lead to fewer results.</h3>
+      <div class="character-options">
+        <h2 class="char-title">Characteristics</h2>
+        <h3 class="instructions">
+          Choose the most important characteristics for your cat. 1 or 2 is
+          recommended. Using 3 or more will lead to fewer results.
+        </h3>
         <div class="checkboxes">
-          <input type="checkbox" name="active" id="active" value="Active" />
-          <label for="active">Active</label>
-          <input
-            type="checkbox"
-            name="affectionate"
-            id="affectionate"
-            value="Affectionate"
-          /><label for="affectionate">Affectionate</label>
-          <input type="checkbox" name="agile" id="agile" value="Agile" /><label
-            for="agile"
-            >Agile</label
-          >
-          <input type="checkbox" name="alert" id="alert" value="Alert" /><label
-            for="alert"
-            >Alert</label
-          >
-          <input
-            type="checkbox"
-            name="curious"
-            id="curious"
-            value="Curious"
-          /><label for="curious">Curious</label>
-          <input type="checkbox" name="calm" id="calm" value="Calm" /><label
-            for="calm"
-            >Calm</label
-          >
-          <input
-            type="checkbox"
-            name="clever"
-            id="clever"
-            value="Clever"
-          /><label for="clever">Clever</label>
-          <input
-            type="checkbox"
-            name="demanding"
-            id="demanding"
-            value="Demanding"
-          /><label for="demanding">Demanding</label>
-          <input
-            type="checkbox"
-            name="dependent"
-            id="dependent"
-            value="Dependent"
-          /><label for="dependent">Dependent</label>
-          <input
-            type="checkbox"
-            name="devoted"
-            id="devoted"
-            value="Devoted"
-          /><label for="devoted">Devoted</label>
-          <input
-            type="checkbox"
-            name="energetic"
-            id="energetic"
-            value="Energetic"
-          /><label for="energetic">Energetic</label>
-          <input
-            type="checkbox"
-            name="easy-going"
-            id="easy-going"
-            value="Easy going"
-          /><label for="easy-going">Easy going</label>
-          <input
-            type="checkbox"
-            name="expressive"
-            id="expressive"
-            value="Expressive"
-          /><label for="expressive">Expressive</label>
-          <input
-            type="checkbox"
-            name="fun-loving"
-            id="fun-loving"
-            value="Fun"
-          /><label for="fun-loving">Fun-loving</label>
-          <input
-            type="checkbox"
-            name="friendly"
-            id="friendly"
-            value="Friendly"
-          />
-          <label for="friendly">Friendly</label>
-          <input
-            type="checkbox"
-            name="gentle"
-            id="gentle"
-            value="Gentle"
-          /><label for="gentle">Gentle</label>
-          <input
-            type="checkbox"
-            name="independent"
-            id="independent"
-            value="Independent"
-          /><label for="independent">Independent</label>
-          <input
-            type="checkbox"
-            name="intelligent"
-            id="intelligent"
-            value="Intelligent"
-          /><label for="intelligent">Intelligent</label>
-          <input
-            type="checkbox"
-            name="interactive"
-            id="interactive"
-            value="Interactive"
-          /><label for="interactive">Interactive</label>
-          <input
-            type="checkbox"
-            name="inquisitive"
-            id="inquisitive"
-            value="Inquisitive"
-          /><label for="inquisitive">Inquisitive</label>
-          <input
-            type="checkbox"
-            name="lively"
-            id="lively"
-            value="Lively"
-          /><label for="lively">Lively</label>
-          <input type="checkbox" name="loyal" id="loyal" value="Loyal" /><label
-            for="loyal"
-            >Loyal</label
-          >
-          <input
-            type="checkbox"
-            name="loving"
-            id="loving"
-            value="loving"
-          /><label for="loving">loving</label>
-          <input
-            type="checkbox"
-            name="mischievous"
-            id="mischievous"
-            value="Mischievous"
-          /><label for="mischievous">Mischievous</label>
-          <input
-            type="checkbox"
-            name="outgoing"
-            id="outgoing"
-            value="Outgoing"
-          /><label for="outgoing">Outgoing</label>
-          <input
-            type="checkbox"
-            name="playful"
-            id="playful"
-            value="Playful"
-          /><label for="playful">Playful</label>
-          <input
-            type="checkbox"
-            name="patient"
-            id="patient"
-            value="Patient"
-          /><label for="patient">Patient</label>
-          <input type="checkbox" name="quiet" id="quiet" value="Quiet" /><label
-            for="quiet"
-            >Quiet</label
-          >
-          <input
-            type="checkbox"
-            name="relaxed"
-            id="relaxed"
-            value="Relaxed"
-          /><label for="relaxed">Relaxed</label>
-          <input
-            type="checkbox"
-            name="social"
-            id="social"
-            value="Social"
-          /><label for="social">Social</label>
-          <input
-            type="checkbox"
-            name="sensitive"
-            id="sensitive"
-            value="Sensitive"
-          /><label for="sensitive">Sensitive</label>
-          <input
-            type="checkbox"
-            name="sensible"
-            id="sensible"
-            value="Sensible"
-          /><label for="sensible">Sensible</label>
-          <input type="checkbox" name="sweet" id="sweet" value="Sweet" /><label
-            for="sweet"
-            >Sweet</label
-          >
-          <input
-            type="checkbox"
-            name="sedate"
-            id="sedate"
-            value="Sedate"
-          /><label for="sedate">Sedate</label>
-          <input
-            type="checkbox"
-            name="sweet-tempered"
-            id="sweet-tempered"
-            value="Sweet-tempered"
-          /><label for="sweet-tempered">Sweet-tempered</label>
-          <input
-            type="checkbox"
-            name="talkative"
-            id="talkative"
-            value="Talkative"
-          /><label for="talkative">Talkative</label>
-          <input
-            type="checkbox"
-            name="trainable"
-            id="trainable"
-            value="Trainable"
-          /><label for="trainable">Trainable</label>
-          <input
-            type="checkbox"
-            name="tenacious"
-            id="tenacious"
-            value="Tenacious"
-          /><label for="tenacious">Tenacious</label>
-          <input type="checkbox" name="warm" id="warm" value="Warm" /><label
-            for="warm"
-            >Warm</label
-          >
-        </div> <br>
-        <!-- <h3>Choose a how important these characteristics are to you from 1 (not important) to 5 (very important). </h3> -->
-        <!-- <div class="sliders">
+          <div class="characteristic">
+            <input type="checkbox" name="active" id="active" value="Active" />
+            <label for="active">Active</label>
+          </div>
+
+          <div class="characteristic">
+            <input
+              type="checkbox"
+              name="affectionate"
+              id="affectionate"
+              value="Affectionate"
+            /><label for="affectionate">Affectionate</label>
+          </div>
+
+          <div class="characteristic">
+            <input
+              type="checkbox"
+              name="agile"
+              id="agile"
+              value="Agile"
+            /><label for="agile">Agile</label>
+          </div>
+
+          <div class="characteristic">
+            <input
+              type="checkbox"
+              name="curious"
+              id="curious"
+              value="Curious"
+            /><label for="curious">Curious</label>
+          </div>
+
+          <div class="characteristic">
+            <input type="checkbox" name="calm" id="calm" value="Calm" /><label
+              for="calm"
+              >Calm</label
+            >
+          </div>
+
+          <div class="characteristic">
+            <input
+              type="checkbox"
+              name="clever"
+              id="clever"
+              value="Clever"
+            /><label for="clever">Clever</label>
+          </div>
+
+          <div class="characteristic">
+            <input
+              type="checkbox"
+              name="demanding"
+              id="demanding"
+              value="Demanding"
+            /><label for="demanding">Demanding</label>
+          </div>
+
+          <div class="characteristic">
+            <input
+              type="checkbox"
+              name="dependent"
+              id="dependent"
+              value="Dependent"
+            /><label for="dependent">Dependent</label>
+          </div>
+
+          <div class="characteristic">
+            <input
+              type="checkbox"
+              name="energetic"
+              id="energetic"
+              value="Energetic"
+            /><label for="energetic">Energetic</label>
+          </div>
+
+          <div class="characteristic">
+            <input
+              type="checkbox"
+              name="friendly"
+              id="friendly"
+              value="Friendly"
+            />
+            <label for="friendly">Friendly</label>
+          </div>
+
+          <div class="characteristic">
+            <input
+              type="checkbox"
+              name="gentle"
+              id="gentle"
+              value="Gentle"
+            /><label for="gentle">Gentle</label>
+          </div>
+
+          <div class="characteristic">
+            <input
+              type="checkbox"
+              name="independent"
+              id="independent"
+              value="Independent"
+            /><label for="independent">Independent</label>
+          </div>
+
+          <div class="characteristic">
+            <input
+              type="checkbox"
+              name="intelligent"
+              id="intelligent"
+              value="Intelligent"
+            /><label for="intelligent">Intelligent</label>
+          </div>
+
+          <div class="characteristic">
+            <input
+              type="checkbox"
+              name="interactive"
+              id="interactive"
+              value="Interactive"
+            /><label for="interactive">Interactive</label>
+          </div>
+
+          <div class="characteristic">
+            <input
+              type="checkbox"
+              name="lively"
+              id="lively"
+              value="Lively"
+            /><label for="lively">Lively</label>
+          </div>
+
+          <div class="characteristic">
+            <input
+              type="checkbox"
+              name="loyal"
+              id="loyal"
+              value="Loyal"
+            /><label for="loyal">Loyal</label>
+          </div>
+
+          <div class="characteristic">
+            <input
+              type="checkbox"
+              name="outgoing"
+              id="outgoing"
+              value="Outgoing"
+            /><label for="outgoing">Outgoing</label>
+          </div>
+
+          <div class="characteristic">
+            <input
+              type="checkbox"
+              name="playful"
+              id="playful"
+              value="Playful"
+            /><label for="playful">Playful</label>
+          </div>
+
+          <div class="characteristic">
+            <input
+              type="checkbox"
+              name="patient"
+              id="patient"
+              value="Patient"
+            /><label for="patient">Patient</label>
+          </div>
+
+          <div class="characteristic">
+            <input
+              type="checkbox"
+              name="quiet"
+              id="quiet"
+              value="Quiet"
+            /><label for="quiet">Quiet</label>
+          </div>
+
+          <div class="characteristic">
+            <input
+              type="checkbox"
+              name="relaxed"
+              id="relaxed"
+              value="Relaxed"
+            /><label for="relaxed">Relaxed</label>
+          </div>
+
+          <div class="characteristic">
+            <input
+              type="checkbox"
+              name="social"
+              id="social"
+              value="Social"
+            /><label for="social">Social</label>
+          </div>
+          <div class="characteristic">
+            <input
+              type="checkbox"
+              name="sweet"
+              id="sweet"
+              value="Sweet"
+            /><label for="sweet">Sweet</label>
+          </div>
+        </div>
+
+        <br />
+      </div>
+
+      <!-- <h3>Choose a how important these characteristics are to you from 1 (not important) to 5 (very important). </h3> -->
+      <!-- <div class="sliders">
           <input
             type="range"
             name="affection"
@@ -340,12 +330,9 @@
             value="1"
           /><label for="vocalisation">Vocalisation</label>
         </div> -->
-      </form>
-      <button class="submit">Get cats!</button>
-      <div class="results">
-       
 
-      </div>
+      <button class="submit">Get cats!</button>
+      <div class="results"></div>
     </main>
     <script src="choose-pet.js"></script>
   </body>
