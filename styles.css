@@ -77,7 +77,6 @@ h1 {
   border-radius: 20px;
   border: 2px solid #fff5e4;
   max-height: 55vh;
-  
 }
 
 /* Info Page */
@@ -153,31 +152,29 @@ h1 {
   padding: 10px 0;
 }
 
-
-
 .char-title {
-    color: #850e35;
-    text-decoration: underline;
-    font-size: 1.3rem;
-    letter-spacing: 1px;
+  color: #850e35;
+  text-decoration: underline;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
 }
 
 .instructions {
-    color: #ee6983;
-    font-weight: 300;
-    letter-spacing: 0.2px;
-    font-size: 1.1rem;
-    }
+  color: #ee6983;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+  font-size: 1.1rem;
+}
 
 .checkboxes {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 130px);
+  grid-template-columns: repeat(auto-fit, 130px);
   row-gap: 0.3rem;
   justify-content: center;
+  padding-left: 0.8rem;
 }
 .characteristic {
-    justify-self: start;
-    padding-left: 0.8rem;
+  justify-self: start;
 }
 
 .characteristic input[type="checkbox"] {
@@ -199,7 +196,7 @@ h1 {
 }
 
 .characteristic input[type="checkbox"]:checked + label {
-    color: #ee6983;
+  color: #ee6983;
 }
 
 .characteristic label {
@@ -259,7 +256,6 @@ h1 {
   background-color: #fff5e4;
   text-align: center;
   padding: 0.4rem 0.5rem;
-
 }
 
 .results h3 {
