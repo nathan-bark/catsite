@@ -171,7 +171,7 @@ h1 {
 
 .checkboxes {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 7.2rem);
+  grid-template-columns: repeat(auto-fill, 130px);
   row-gap: 0.3rem;
   justify-content: center;
 }
