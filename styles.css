@@ -273,7 +273,8 @@ h1 {
   font-weight: 700;
 }
 .results img {
-  width: 70%;
+  width: auto;
+  height: 50vh;
   margin-bottom: 1rem;
   border-radius: 40px;
 }
