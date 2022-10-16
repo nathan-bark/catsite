@@ -61,12 +61,22 @@ h1 {
   background-color: #850e35;
   color: #fff5e4;
   outline: none;
-  border: 2px solid #fff5e4;
+  border: 2px solid #850e35;
   padding: 10px;
   border-radius: 20px;
   width: 25%;
   align-self: center;
   margin-bottom: 1rem;
+}
+.get-cat-btn:hover {
+  background-color: #aa4164;
+  border-color: #fff5e4;
+}
+
+.get-cat-btn:active {
+  color: #b3dd8c;
+  background-color: #ee6983;
+  border-color: #850e35;
 }
 
 /* image */
@@ -124,25 +134,6 @@ h1 {
   border-radius: 20px;
 }
 
-/* responsive */
-
-@media only screen and (min-width: 600px) {
-  li {
-    font-size: 1.5rem;
-  }
-
-  h1 {
-    font-size: 2.4rem;
-  }
-
-  .get-cat-btn {
-    font-size: 1.3rem;
-  }
-
-  .breed-list {
-    width: 25%;
-  }
-}
 
 /* new pet */
 
@@ -285,4 +276,37 @@ h1 {
   width: 70%;
   margin-bottom: 1rem;
   border-radius: 40px;
+}
+
+.results .error-text {
+  text-decoration: none;
+}
+
+.results .error-image {
+  width: 40%;
+}
+
+/* responsive */
+
+@media only screen and (min-width: 600px) {
+  html {
+    font-size:20px;
+  }
+  li {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    padding: 20px;
+  }
+
+  .get-cat-btn {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .breed-list {
+    width: 25%;
+  }
 }
